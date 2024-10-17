@@ -1,0 +1,30 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/*
+//////////////////
+    Components
+//////////////////
+*/
+
+
+/*
+/////////////////
+    App Styles
+/////////////////
+*/
