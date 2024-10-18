@@ -1,3 +1,21 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .row {
     display: flex;
@@ -5,9 +23,9 @@
 }
 
 .row>* {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5rem;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
 }
 
 .col {
@@ -78,8 +96,7 @@
 /*
     Break Points
 */
-
-@media all and (max-width: 576px) {
+@media all and (min-width: 576px) {
     .container {
         width: 540px;
     }
@@ -145,7 +162,7 @@
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) {
     .container {
         width: 720px;
     }
@@ -211,7 +228,7 @@
     }
 }
 
-@media all and (max-width: 992px) {
+@media all and (min-width: 992px) {
     .container {
         width: 920px;
     }
@@ -277,7 +294,7 @@
     }
 }
 
-@media all and (max-width: 1200px) {
+@media all and (min-width: 1200px) {
     .container {
         width: 1140px;
     }
@@ -343,7 +360,7 @@
     }
 }
 
-@media all and (max-width: 1400px) {
+@media all and (min-width: 1400px) {
     .container {
         width: 1370px;
     }

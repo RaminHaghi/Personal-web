@@ -1,38 +1,18 @@
-html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
+/*
+    Imported Files
+*/
+@import url("./reset.css");
+@import url("./fonts.css");
+@import url("./grid.css");
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
+/*
+    -=-=-=-=-=
+    App Styles
+    -=-=-=-=-=
+*/
 body {
     font-size: 1.6rem;
     line-height: 1.6;
-    overflow-x: hidden;
+    font-family: "Poppins regular";
 }
 
-/*
-//////////////////
-    Components
-//////////////////
-*/
-.container {
-    width: 100%;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-
-/*
-/////////////////
-    App Styles
-/////////////////
-*/
