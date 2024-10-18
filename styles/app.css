@@ -13,6 +13,17 @@
     --shadow-color: rgba(96,233,255,25%);
 }
 
+
+/*
+    Components
+*/
+.btn {
+    font-family: "Poppins SemiBold";
+    width: 20rem;
+    height: 60rem;
+    background-color: var(--text-color);
+}
+
 /*
     -=-=-=-=-=
     App Styles
@@ -33,6 +44,11 @@ a {
     text-decoration: none;
 }
 
+/*
+    -=-=-=
+    Header
+    -=-=-=
+*/
 .header {
     box-shadow: 0 0.3rem 5.9rem var(--shadow-color);
 }
@@ -76,6 +92,11 @@ a {
     color: var(--primary-color);
 }
 
+/*
+    -=-=-=-=-=-=-=-=-
+    Mobile Menu & Btn
+    -=-=-=-=-=-=-=-=-
+*/
 .nav-toggle {
     display: none;
     justify-content: center;
@@ -131,3 +152,9 @@ a {
 .mobile-menu__link--active {
 
 }
+
+/*
+    -=-=-=-=-=-=-=-
+    Header Contents
+    -=-=-=-=-=-=-=-
+*/
