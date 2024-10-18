@@ -5,14 +5,27 @@
 @import url("./fonts.css");
 @import url("./grid.css");
 
+:root {
+    --primary-color: #09BEAD;
+    --text-color: #333333;
+    --app-bg-color: #ffffff;
+    --section-bg-color: #ffffff;
+    --shadow-color: rgba(96,233,255,25%);
+}
+
 /*
     -=-=-=-=-=
     App Styles
     -=-=-=-=-=
 */
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-size: 1.6rem;
     line-height: 1.6;
-    font-family: "Poppins regular";
+    font-family: "Poppins Regular";
 }
 
