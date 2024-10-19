@@ -1,0 +1,40 @@
+/*
+    + |Desktop First| +
+*/
+@media all and (max-width: 1400px) {
+
+}
+
+@media all and (max-width: 1200px) {
+    .menu__item {
+        margin-left: 3rem;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .header__logo {
+        font-size: 6rem;
+    }
+
+    .menu__item {
+        margin-left: 2rem;
+    }
+    .menu__link  {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+}
+
+@media all and (max-width: 576px) {
+    
+}

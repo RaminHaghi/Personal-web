@@ -1,5 +1,5 @@
 /*
-    Imported Files
+   x |Imported Files| x+
 */
 @import url("./reset.css");
 @import url("./fonts.css");
@@ -10,12 +10,11 @@
     --text-color: #333333;
     --app-bg-color: #ffffff;
     --section-bg-color: #ffffff;
-    --shadow-color: rgba(96,233,255,25%);
 }
 
 
 /*
-    Components
+   x |Components| x
 */
 .btn {
     font-family: "Poppins SemiBold";
@@ -25,9 +24,7 @@
 }
 
 /*
-    -=-=-=-=-=
-    App Styles
-    -=-=-=-=-=
+   x |App Styles| x
 */
 
 html {
@@ -38,6 +35,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.6;
     font-family: "Poppins Regular";
+    color: var(--text-color);
 }
 
 a {
@@ -45,12 +43,11 @@ a {
 }
 
 /*
-    -=-=-=
-    Header
-    -=-=-=
+    x |Header| x
 */
 .header {
-    box-shadow: 0 0.3rem 5.9rem var(--shadow-color);
+    box-shadow: 0 0.3rem 5.9rem rgba(4, 195, 255, 16%);
+    background-color: var(--section-bg-color);
 }
 
 .navbar {
@@ -58,6 +55,7 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 15rem;
+    position: relative;
 }
 
 .header__logo {
@@ -66,95 +64,93 @@ a {
     color: var(--primary-color);
 }
 
-.header-menu {
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header-menu__item {
-    margin-right: 5rem;
+.menu__item {
+    margin-left: 5rem;
 }
 
-.header-menu__link {
+.menu__item:first-child {
+    margin-left: 0;
+}
+
+.menu__link {
     font-family: "Poppins Medium";
     color: var(--text-color);
-    transition: all 250ms ease-in;
+    transition: all 250ms ease-in-out;
 }
 
-.header-menu__link:hover {
+.menu__link:hover {
     color: var(--primary-color);
-    font-size: 1.65rem;
-    letter-spacing: 0.2rem;
+    font-size: 1.61rem;
+    letter-spacing: 0.1rem;
 }
 
-.header-menu__link--active {
+.menu__link--active {
     color: var(--primary-color);
 }
 
 /*
-    -=-=-=-=-=-=-=-=-
-    Mobile Menu & Btn
-    -=-=-=-=-=-=-=-=-
+    x |Mobile Menu & Btn| x
 */
-.nav-toggle {
+.menu-toggle {
     display: none;
     justify-content: center;
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background-color: #fff;
+    background-color: var(--app-bg-color);
     border-radius: 1.5rem;
     box-shadow: 0 0 5rem -1rem var(--primary-color);
+    cursor: pointer;
 }
 
-.nav-toggle__line {
-    display: block;
+.menu-toggle__line {
+    position: relative;
+}
+
+.menu-toggle__line,
+.menu-toggle__line::before,
+.menu-toggle__line::after {
+    content: ' ';
     border-radius: 2rem;
     width: 3rem;
     height: 0.2rem;
     background-color: var(--primary-color);
-    position: relative;
 }
 
-.nav-toggle__line::before {
-    content: ' ';
+.menu-toggle__line::before {
     position: absolute;
-    border-radius: 1.5rem;
-    width: 3rem;
-    height: 0.2rem;
-    background-color: var(--primary-color);
     top: -0.7rem;
 }
 
-.nav-toggle__line::after {
-    content: ' ';
+.menu-toggle__line::after {
     position: absolute;
-    border-radius: 1.5rem;
-    width: 3rem;
-    height: 0.2rem;
-    background-color: var(--primary-color);
     top: 0.7rem;
 }
 
 .mobile-menu {
     display: none;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 15rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
 }
 
-.mobile-menu__item {
-
-}
+.mobile-menu__item {}
 
 .mobile-menu__link {
-
+    color: var(--text-color);
 }
 
-.mobile-menu__link--active {
-
-}
+.mobile-menu__link--active {}
 
 /*
-    -=-=-=-=-=-=-=-
-    Header Contents
-    -=-=-=-=-=-=-=-
+    x |Header Contents| x
 */
