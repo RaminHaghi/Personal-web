@@ -48,6 +48,10 @@ a {
 .header {
     box-shadow: 0 0.3rem 5.9rem rgba(4, 195, 255, 16%);
     background-color: var(--section-bg-color);
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    left: 0;
 }
 
 .navbar {
@@ -68,6 +72,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .menu__item {
@@ -103,9 +108,6 @@ a {
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background-color: var(--app-bg-color);
-    border-radius: 1.5rem;
-    box-shadow: 0 0 5rem -1rem rgba(4, 195, 255, 70%);
     cursor: pointer;
 }
 
@@ -119,20 +121,20 @@ a {
 .menu-toggle__line::after {
     content: ' ';
     border-radius: 2.5rem;
-    width: 4rem;
-    height: 0.3rem;
+    width: 5rem;
+    height: 0.4rem;
     background-color: var(--primary-color);
 }
 
 .menu-toggle__line::before {
     position: absolute;
-    top: 0.8rem;
+    top: 1.2rem;
     transition: all 250ms ease-in-out;
 }
 
 .menu-toggle__line::after {
     position: absolute;
-    bottom: 0.8rem;
+    bottom: 1.2rem;
     transition: all 250ms ease-in-out;
 }
 
@@ -141,9 +143,9 @@ a {
 }
 
 .menu-toggle--open .menu-toggle__line::before {
-    transform: translateY(-0.8rem) rotate(45deg);
+    transform: translateY(-1.2rem) rotate(-45deg);
 }
 
 .menu-toggle--open .menu-toggle__line::after {
-    transform: translateY(0.8rem) rotate(-45deg);
+    transform: translateY(1.2rem) rotate(45deg);
 }
