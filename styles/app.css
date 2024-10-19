@@ -149,3 +149,7 @@ a {
 .menu-toggle--open .menu-toggle__line::after {
     transform: translateY(1.2rem) rotate(45deg);
 }
+
+/*
+    x |Home| x
+*/
