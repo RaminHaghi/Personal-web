@@ -147,25 +147,3 @@ a {
 .menu-toggle--open .menu-toggle__line::after {
     transform: translateY(0.8rem) rotate(-45deg);
 }
-
-.mobile-menu {
-    display: none;
-    background-color: var(--primary-color);
-    position: fixed;
-    top: 15rem;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-}
-
-.mobile-menu__item {}
-
-.mobile-menu__link {
-    color: var(--text-color);
-}
-
-.mobile-menu__link--active {}
-
-/*
-    x |Header Contents| x
-*/

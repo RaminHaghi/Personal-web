@@ -26,7 +26,30 @@
 
 @media all and (max-width: 768px) {
     .menu {
-        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--section-bg-color);
+        transition: all 250ms ease-in-out;
+    }
+
+    .menu--open {
+        height: 34rem;
+    }
+
+    .menu__item {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .menu__item:first-child {
+        margin-top: 2rem;
     }
 
     .menu-toggle {
