@@ -1,9 +1,7 @@
 /*
     + |Desktop First| +
 */
-@media all and (max-width: 1400px) {
-
-}
+@media all and (max-width: 1400px) {}
 
 @media all and (max-width: 1200px) {
     .menu__item {
@@ -19,7 +17,8 @@
     .menu__item {
         margin-left: 2rem;
     }
-    .menu__link  {
+
+    .menu__link {
         font-size: 1.5rem;
     }
 }
@@ -75,6 +74,4 @@
 
 }
 
-@media all and (max-width: 576px) {
-    
-}
+@media all and (max-width: 576px) {}
