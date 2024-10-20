@@ -7,6 +7,7 @@
 
 :root {
     --primary-color: #09BEAD;
+    --orange-color: #F57F17;
     --text-color: #333333;
     --app-bg-color: #ffffff;
     --section-bg-color: #ffffff;
@@ -16,11 +17,24 @@
 /*
    x |Components| x
 */
-.btn {
+.app-btn {
     font-family: "Poppins SemiBold";
     width: 20rem;
-    height: 60rem;
+    height: 5.5rem;
+    color: #fff;
     background-color: var(--text-color);
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1.6rem 2.9rem rgba(11, 190, 173, 41%);
+}
+
+/*
+   x |Helper Classes| x
+*/
+.items-center {
+    align-items: center;
 }
 
 /*
@@ -50,6 +64,7 @@ a {
     background-color: var(--section-bg-color);
     position: fixed;
     z-index: 100;
+    top: 0;
     right: 0;
     left: 0;
 }
@@ -58,7 +73,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15rem;
+    height: 13rem;
     position: relative;
 }
 
@@ -153,3 +168,64 @@ a {
 /*
     x |Main| x
 */
+.main {
+    padding-top: 13rem;
+}
+
+.home__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.home__username {
+    font-family: "Poppins SemiBold";
+    font-size: 2.8rem;
+    color: var(--primary-color);
+}
+
+.home__username span {
+    color: var(--orange-color);
+}
+
+.home__title {
+    font-family: "Poppins Bold";
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+/* .home__caption {
+
+} */
+
+.home__links-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.home__link {
+    background-color: var(--primary-color);
+}
+
+.app-btn-orange {
+    background-color: var(--orange-color);
+    box-shadow: 0 1.6rem 2.9rem rgba(245, 127, 23, 41%);
+}
+
+.home__avatar {
+    width: 51rem;
+    height: 51rem;
+    background: url("../images/home-avatar.jpg") no-repeat;
+    border: 2rem solid var(--section-bg-color);
+    border-radius: 100%;
+    background-size: cover;
+    background-position: -17rem top;
+    box-shadow: 0 0 5.9rem rgba(96, 233, 255, 27%);
+}
+
+.home__shape {
+    width: 100%;
+}
