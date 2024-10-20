@@ -1,11 +1,21 @@
 /*
     + |Desktop First| +
 */
-@media all and (max-width: 1400px) {}
+@media all and (max-width: 1400px) {
+    .home__avatar {
+        width: 46rem;
+        height: 46rem;
+    }
+}
 
 @media all and (max-width: 1200px) {
     .menu__item {
         margin-left: 3rem;
+    }
+
+    .home__avatar {
+        width: 37rem;
+        height: 37rem;
     }
 }
 
@@ -21,6 +31,19 @@
     .menu__link {
         font-size: 1.5rem;
     }
+
+    .home__content-wrapper {
+        align-items: center;
+    }
+
+    .home__avatar {
+        margin: 0 auto 2rem auto;
+    }
+
+    .home .row {
+        flex-direction: column-reverse;
+    }
+
 }
 
 @media all and (max-width: 768px) {
@@ -74,4 +97,24 @@
 
 }
 
-@media all and (max-width: 576px) {}
+@media all and (max-width: 576px) {
+
+    .home__username {
+        font-size: 2rem;
+    }
+
+    .home__title {
+        font-size: 3.3rem;
+    }
+
+    .home__caption {
+        font-size: 1.5rem;
+        max-width: 33rem;
+    }
+
+    .home__avatar {
+        border: 1rem solid var(--section-bg-color);
+        width: 32rem;
+        height: 32rem;
+    }
+}
