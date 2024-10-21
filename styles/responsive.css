@@ -2,6 +2,10 @@
     + |Desktop First| +
 */
 @media all and (max-width: 1400px) {
+    .home {
+        height: 85rem;
+    }
+
     .home__avatar {
         width: 46rem;
         height: 46rem;
@@ -13,6 +17,10 @@
         margin-left: 3rem;
     }
 
+    .home {
+        height: 75rem;
+    }
+    
     .home__avatar {
         width: 37rem;
         height: 37rem;
@@ -32,6 +40,10 @@
         font-size: 1.5rem;
     }
 
+    .home {
+        background: none;
+    }
+
     .home__content-wrapper {
         align-items: center;
     }
@@ -43,10 +55,13 @@
     .home .row {
         flex-direction: column-reverse;
     }
-
 }
 
 @media all and (max-width: 768px) {
+    .header__logo {
+        font-size: 5rem;
+    }
+
     .menu {
         position: absolute;
         top: 100%;
@@ -95,6 +110,9 @@
         z-index: 99;
     }
 
+    .home__avatar {
+        border-width: 1rem;
+    }
 }
 
 @media all and (max-width: 576px) {
@@ -113,8 +131,38 @@
     }
 
     .home__avatar {
-        border: 1rem solid var(--section-bg-color);
         width: 32rem;
         height: 32rem;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .home__avatar {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .home__links-wrapper,
+    .home__link {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .home__username {
+        font-size: 1.6rem;
+    }
+
+    .home__title {
+        font-size: 2.4rem;
+    }
+
+    .home__caption {
+        font-size: 1.4rem;
+        max-width: 28rem;
+    }
+
+    .home__link {
+        height: 4rem;
+        font-size: 1.4rem;
     }
 }
