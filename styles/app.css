@@ -72,6 +72,7 @@
     right: -10rem;
 }
 
+
 /*
    x |Helper Classes| x
 */
@@ -79,6 +80,9 @@
     align-items: center;
 }
 
+.gap-2rem {
+    gap: 2rem;
+}
 /*
    x |App Styles| x
 */
@@ -217,6 +221,7 @@ a {
     background: url("../images/shape-header.svg") no-repeat;
     background-position: bottom;
     padding-top: 10rem;
+    margin-bottom: 12rem;
 }
 
 .home__content-wrapper {
@@ -279,7 +284,7 @@ a {
     x |About us| x
 */
 .about-us {
-    margin: 12rem auto;
+    margin-bottom: 12rem;
     height: 85.5rem;
 }
 
@@ -358,4 +363,62 @@ a {
 
 /*
     x |Services| x
+*/
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 12rem;
+}
+
+.service {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 7rem 4rem;    width: 40rem;
+    height: 40rem;
+    
+}
+
+.service__title {
+    font-family: "Poppins Bold";
+    font-size: 2.4rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.service--purple {
+    background-color: #8540FF;
+    box-shadow: 0 0 3rem rgba(118, 13, 255, 35%);
+}
+
+.service--yellow {
+    background-color: #FFC50C;
+    box-shadow: 0 0 3rem rgba(255, 197, 12, 35%);
+}
+
+.service--pink {
+    background-color: #EC407A;
+    box-shadow: 0 0 3rem rgba(236, 64, 122, 35%);
+}
+
+.service--orange {
+    background-color: #FF6331;
+    box-shadow: 0 0 3rem rgba(255, 99, 49, 35%);
+}
+
+.service--blue {
+    background-color: #13B6FF;
+    box-shadow: 0 0 3rem rgba(19, 182, 255, 35%);
+}
+
+.service--green {
+    background-color: #49AF46;
+    box-shadow: 0 0 3rem rgba(73, 175, 70, 35%);
+}
+
+/*
+    x |Resume| x
 */

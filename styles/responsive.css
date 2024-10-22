@@ -10,6 +10,10 @@
         width: 46rem;
         height: 46rem;
     }
+
+    .service {
+        width: 53rem;
+    }
 }
 
 @media all and (max-width: 1200px) {
@@ -24,6 +28,9 @@
     .home__avatar {
         width: 37rem;
         height: 37rem;
+    }
+    .service {
+        width: 43rem;
     }
 }
 
@@ -75,6 +82,10 @@
 
     .about-us__links {
         padding-bottom: 7rem;
+    }
+    
+    .service {
+        width: 100%;
     }
 
 }
