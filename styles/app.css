@@ -308,12 +308,12 @@ a {
     padding: 0 4rem;
 }
 
-.about-us__content-title {
+.about-us__title {
     font-family: "Poppins SemiBold";
     font-size: 2.4rem;
 }
 
-.about-us__content-discription {
+.about-us__discription {
     max-width: 57rem;
     margin: 2rem 0 6rem 0;
 }
@@ -355,3 +355,7 @@ a {
     background-color: var(--orange-color);
     box-shadow: 0 1.6rem 2.9rem rgba(245, 127, 23, 41%);
 }
+
+/*
+    x |Services| x
+*/

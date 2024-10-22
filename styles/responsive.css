@@ -20,7 +20,7 @@
     .home {
         height: 75rem;
     }
-    
+
     .home__avatar {
         width: 37rem;
         height: 37rem;
@@ -55,6 +55,28 @@
     .home .row {
         flex-direction: column-reverse;
     }
+
+    .about-us__content-wrapper {
+        height: 100rem;
+        flex-direction: column;
+    }
+
+    .about-us__image-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    .about-us__discription {
+        max-width: auto;
+    }
+
+    .about-us {
+        height: 120rem;
+    }
+
+    .about-us__links {
+        padding-bottom: 7rem;
+    }
+
 }
 
 @media all and (max-width: 768px) {
@@ -112,6 +134,29 @@
 
     .home__avatar {
         border-width: 1rem;
+    }
+
+    .home__links-wrapper,
+    .home__link {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-us__links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-us__link {
+        width: 100%;
+    }
+
+    .about-us__content-wrapper {
+        height: 120rem;
+    }
+
+    .about-us {
+        height: 142rem;
     }
 }
 
