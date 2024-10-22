@@ -19,15 +19,57 @@
 */
 .app-btn {
     font-family: "Poppins SemiBold";
-    width: 15rem;
+    width: 17rem;
     height: 5rem;
     color: #fff;
-    background-color: var(--text-color);
+    background-color: var(--primary-color);
     border-radius: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 1.6rem 2.9rem rgba(11, 190, 173, 41%);
+}
+
+.section-title {
+    font-family: "Poppins Bold";
+    font-size: 4.8rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.section-subject {
+    letter-spacing: 0.4rem;
+    text-align: center;
+}
+
+.section-line {
+    display: block;
+    width: 3.9rem;
+    height: 1rem;
+    border-radius: 10rem;
+    background-color: var(--primary-color);
+    margin: 2rem auto 9rem auto;
+    position: relative;
+}
+
+.section-line::before,
+.section-line::after {
+    content: ' ';
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 12rem;
+    height: 0.2rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.section-line::before {
+    left: -10rem;
+}
+
+.section-line::after {
+    right: -10rem;
 }
 
 /*
@@ -217,7 +259,7 @@ a {
     background-color: var(--primary-color);
 }
 
-.app-btn--orange {
+.home__link--orange {
     background-color: var(--orange-color);
     box-shadow: 0 1.6rem 2.9rem rgba(245, 127, 23, 41%);
 }
@@ -233,3 +275,83 @@ a {
     box-shadow: 0 0 5.9rem rgba(96, 233, 255, 27%);
 }
 
+/*
+    x |About us| x
+*/
+.about-us {
+    margin: 12rem auto;
+    height: 85.5rem;
+}
+
+.about-us__content-wrapper {
+    box-shadow: 0 0 5.9rem rgba(96, 233, 255, 27%);
+    height: 64.8rem;
+    display: flex;
+}
+
+.about-us__image-wrapper {
+    flex-basis: 50%;
+    overflow: hidden;
+}
+
+.about-us__image {
+    width: 100%;
+    height: 100%;
+}
+
+.about-us__content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: start;
+    justify-content: center;
+    padding: 0 4rem;
+}
+
+.about-us__content-title {
+    font-family: "Poppins SemiBold";
+    font-size: 2.4rem;
+}
+
+.about-us__content-discription {
+    max-width: 57rem;
+    margin: 2rem 0 6rem 0;
+}
+
+.about-us__tilte-items {
+    font-family: "Poppins SemiBold";
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.about-us__items {
+    margin: 1.2rem 0 3.5rem 4.7rem;
+}
+
+.about-us__item {
+    position: relative;
+}
+
+.about-us__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background-color: var(--orange-color);
+    margin: auto -3rem;
+}
+
+.about-us__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-us__link--orange {
+    background-color: var(--orange-color);
+    box-shadow: 0 1.6rem 2.9rem rgba(245, 127, 23, 41%);
+}
