@@ -1,7 +1,7 @@
 /*
     + |Desktop First| +
 */
-@media all and (max-width: 1400px) {
+@media (max-width: 1400px) {
     .home {
         height: 85rem;
     }
@@ -10,13 +10,9 @@
         width: 46rem;
         height: 46rem;
     }
-
-    .service {
-        width: 53rem;
-    }
 }
 
-@media all and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .menu__item {
         margin-left: 3rem;
     }
@@ -29,12 +25,9 @@
         width: 37rem;
         height: 37rem;
     }
-    .service {
-        width: 43rem;
-    }
 }
 
-@media all and (max-width: 992px) {
+@media (max-width: 992px) {
     .header__logo {
         font-size: 6rem;
     }
@@ -83,14 +76,9 @@
     .about-us__links {
         padding-bottom: 7rem;
     }
-    
-    .service {
-        width: 100%;
-    }
-
 }
 
-@media all and (max-width: 768px) {
+@media (max-width: 768px) {
     .header__logo {
         font-size: 5rem;
     }
@@ -171,7 +159,7 @@
     }
 }
 
-@media all and (max-width: 576px) {
+@media (max-width: 576px) {
 
     .home__username {
         font-size: 2rem;
@@ -192,7 +180,7 @@
     }
 }
 
-@media all and (max-width: 400px) {
+@media (max-width: 400px) {
     .home__avatar {
         width: 25rem;
         height: 25rem;

@@ -14,18 +14,22 @@ html {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    position: relative;
 }
 
+/*
+    - Grid System
+*/
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .row>* {
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
 }
 
 .col {
@@ -93,10 +97,8 @@ html {
     flex: 0 0 auto;
 }
 
-/*
-    x |Break Points| x
-*/
-@media all and (min-width: 576px) {
+/*sm*/
+@media (min-width: 576px) {
     .container {
         width: 540px;
     }
@@ -162,7 +164,8 @@ html {
     }
 }
 
-@media all and (min-width: 768px) {
+/*md*/
+@media (min-width: 768px) {
     .container {
         width: 720px;
     }
@@ -228,9 +231,10 @@ html {
     }
 }
 
-@media all and (min-width: 992px) {
+/*lg*/
+@media (min-width: 992px) {
     .container {
-        width: 920px;
+        width: 960px;
     }
 
     .col-lg-1 {
@@ -294,7 +298,8 @@ html {
     }
 }
 
-@media all and (min-width: 1200px) {
+/*xl*/
+@media (min-width: 1200px) {
     .container {
         width: 1140px;
     }
@@ -360,6 +365,7 @@ html {
     }
 }
 
+/*xxl*/
 @media all and (min-width: 1400px) {
     .container {
         width: 1370px;
