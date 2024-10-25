@@ -417,4 +417,73 @@ a {
     background-color: var(--section-bg-color);
     box-shadow: 0 0 8.1rem rgba(19, 182, 255, 24%);
     margin-bottom: 12rem;
+    padding: 10rem 0;
+}
+
+.resume-list {
+    background-color: var(--app-bg-color);
+    box-shadow: 0 0 8.1rem rgba(19, 182, 255, 24%);
+    position: relative;
+    z-index: 2;
+    padding: 10rem 0;
+}
+
+.resume-list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4rem;
+    background-color: var(--primary-color);
+    z-index: -10;
+}
+
+.resume-list__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+.resume-list__item:last-child {
+    margin-bottom: 0;
+}
+
+
+.resume-list__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5.7rem;
+    border-radius: 4rem;
+    background-color: var(--primary-color);
+    margin: auto;
+    z-index: -1;
+    transition: all 250ms ease-in-out;
+}
+
+.resume-list__item--active::before {
+    max-width: 30rem;
+    width: 100%;
+}
+
+.resume-list__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: auto 0.9rem;
+}
+
+.resume-list__text {
+    color: var(--text-color);
+    font-family: "Poppins SemiBold";
+    font-size: 2rem;
+    padding-left: 3rem;
+    transition: all 250ms ease-in-out;
+}
+
+.resume-list__item--active .resume-list__text{
+    color: #fff;
 }
