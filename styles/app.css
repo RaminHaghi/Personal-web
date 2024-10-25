@@ -40,6 +40,7 @@
 .section-subject {
     letter-spacing: 0.4rem;
     text-align: center;
+    color: var(--text-color);
 }
 
 .section-line {
@@ -78,6 +79,10 @@
 */
 .items-center {
     align-items: center;
+}
+
+.skew-rest {
+    transform: skewY(6deg);
 }
 
 /*
@@ -365,7 +370,7 @@ a {
     x |Services| x
 */
 .services {
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
 }
 
 .service {
@@ -416,10 +421,13 @@ a {
 .resume {
     background-color: var(--section-bg-color);
     box-shadow: 0 0 8.1rem rgba(19, 182, 255, 24%);
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
     padding: 10rem 0;
+    transform: skewY(-6deg);
 }
-
+/*
+    - Resume List
+*/
 .resume-list {
     background-color: var(--app-bg-color);
     box-shadow: 0 0 8.1rem rgba(19, 182, 255, 24%);
@@ -445,6 +453,7 @@ a {
     align-items: center;
     padding: 1rem 0;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 .resume-list__item:last-child {
     margin-bottom: 0;
@@ -466,6 +475,7 @@ a {
 }
 
 .resume-list__item--active::before {
+    box-shadow: 0 0 5.9rem rgba(96, 233, 255, 27%);
     max-width: 30rem;
     width: 100%;
 }
@@ -473,7 +483,7 @@ a {
 .resume-list__icon {
     width: 2.2rem;
     height: 2.2rem;
-    margin: auto 0.9rem;
+    margin: auto 1rem;
 }
 
 .resume-list__text {
@@ -486,4 +496,125 @@ a {
 
 .resume-list__item--active .resume-list__text{
     color: #fff;
+}
+/*
+    - Resume Content
+*/
+.resume-content__wrapper {
+    background-color: var(--section-bg-color);
+    border-left: 0.5rem solid var(--primary-color);
+    height: 100%;
+    margin-left: 6rem;
+}
+
+.resume-content {
+    padding: 2rem 0 2rem 4rem;
+}
+
+.resume-content__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resume-content__title {
+    font-family: "Poppins SemiBold";
+    font-size: 2rem;
+    color: var(--orange-color);
+    position: relative;
+}
+
+.resume-content__title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5.4rem;
+    bottom: 0;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: auto;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+}
+
+.resume-content__tag {
+    padding: 0.1rem 1.2rem;
+    border-radius: 2rem;
+    color: #fff;
+    background-color: var(--orange-color);
+    box-shadow: 0 0.3rem 0.7rem rgba(245, 127, 23, 24%);
+}
+
+.resume-content__subject {
+    color: var(--text-color);
+    font-family: "Poppins SemiBold";
+    margin: 1.7rem 0 0.6rem 0;
+}
+
+.resume-content__discription {
+    color: var(--text-color);
+
+}
+
+/*
+    x |Portfolio| x
+*/
+.portfolio {
+    margin-bottom: 15rem;
+}
+
+.portfolio-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100rem;
+    margin: 0  auto 5rem auto;
+}
+
+.portfolio-list__item {
+    color: var(--text-color);
+}
+
+.portfolio-list__item--active {
+    padding: 0.7rem 2rem;
+    border-radius: 4rem;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.portfolio__banner {
+    background: url("../images/book&travel.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 64rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 15%);
+}
+
+.second-banner {
+    background-image: url("../images/mountain-rocky.jpg");
+}
+
+.third-banner {
+    background-image: url("../images/the-great-outdoors.jpg");
+}
+
+.portfolio-scroll {
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    margin: 0.2rem auto 0 auto;
+}
+
+.portfolio-scroll__item {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 0.3rem solid var(--text-color);
+}
+
+.portfolio-scroll__item--active {
+    border-color: var(--primary-color);
 }

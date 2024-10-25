@@ -10,6 +10,10 @@
         width: 46rem;
         height: 46rem;
     }
+
+    .portfolio__banner {
+        height: 52rem;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -24,6 +28,10 @@
     .home__avatar {
         width: 37rem;
         height: 37rem;
+    }
+
+    .portfolio__banner {
+        height: 42rem;
     }
 }
 
@@ -75,6 +83,13 @@
 
     .about-us__links {
         padding-bottom: 7rem;
+    }
+
+    .portfolio__banner {
+        height: 100rem;
+    }
+    .resume-content__wrapper {
+        margin-left: 0;
     }
 }
 
