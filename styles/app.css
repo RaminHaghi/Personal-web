@@ -434,11 +434,14 @@ a {
     - Resume List
 */
 .resume-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 45rem;
     background-color: var(--app-bg-color);
     box-shadow: 0 0 8.1rem rgba(19, 182, 255, 24%);
     position: relative;
     z-index: 2;
-    padding: 10rem 0;
 }
 
 .resume-list::before {
@@ -508,13 +511,16 @@ a {
     - Resume Content
 */
 .resume-content__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
     background-color: var(--section-bg-color);
     border-left: 0.5rem solid var(--primary-color);
-    margin-left: 6rem;
 }
 
 .resume-content {
-    padding: 2rem 0 2rem 4rem;
+    padding: 1rem 0 0 4rem;
 }
 
 .resume-content__header {
@@ -543,7 +549,7 @@ a {
     background-color: var(--primary-color);
 }
 
-.resume-content__tag {
+.resume-content__date {
     padding: 0.1rem 1.2rem;
     border-radius: 2rem;
     color: #fff;
@@ -551,7 +557,7 @@ a {
     box-shadow: 0 0.3rem 0.7rem rgba(245, 127, 23, 24%);
 }
 
-.resume-content__subject {
+.resume-content__subtitle {
     color: var(--text-color);
     font-family: "Poppins SemiBold";
     margin: 1.7rem 0 0.6rem 0;
