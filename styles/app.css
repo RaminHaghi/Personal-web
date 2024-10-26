@@ -85,6 +85,10 @@
     transform: skewY(6deg);
 }
 
+.h-full {
+    height: 100%;
+}
+
 /*
    x |App Styles| x
 */
@@ -425,6 +429,7 @@ a {
     padding: 10rem 0;
     transform: skewY(-6deg);
 }
+
 /*
     - Resume List
 */
@@ -455,6 +460,7 @@ a {
     margin-bottom: 2rem;
     cursor: pointer;
 }
+
 .resume-list__item:last-child {
     margin-bottom: 0;
 }
@@ -467,6 +473,7 @@ a {
     bottom: 0;
     left: 0;
     width: 5.7rem;
+    max-width: 30rem;
     border-radius: 4rem;
     background-color: var(--primary-color);
     margin: auto;
@@ -476,13 +483,12 @@ a {
 
 .resume-list__item--active::before {
     box-shadow: 0 0 5.9rem rgba(96, 233, 255, 27%);
-    max-width: 30rem;
     width: 100%;
 }
 
 .resume-list__icon {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2rem;
+    height: 2rem;
     margin: auto 1rem;
 }
 
@@ -494,16 +500,16 @@ a {
     transition: all 250ms ease-in-out;
 }
 
-.resume-list__item--active .resume-list__text{
+.resume-list__item--active .resume-list__text {
     color: #fff;
 }
+
 /*
     - Resume Content
 */
 .resume-content__wrapper {
     background-color: var(--section-bg-color);
     border-left: 0.5rem solid var(--primary-color);
-    height: 100%;
     margin-left: 6rem;
 }
 
@@ -568,11 +574,12 @@ a {
     align-items: center;
     justify-content: space-evenly;
     max-width: 100rem;
-    margin: 0  auto 5rem auto;
+    margin: 0 auto 5rem auto;
 }
 
 .portfolio-list__item {
     color: var(--text-color);
+    cursor: pointer;
 }
 
 .portfolio-list__item--active {
@@ -612,7 +619,7 @@ a {
     height: 1.8rem;
     border-radius: 100%;
     background-color: transparent;
-    border: 0.3rem solid var(--text-color);
+    border: 0.3rem solid #BFBEBE;
 }
 
 .portfolio-scroll__item--active {
