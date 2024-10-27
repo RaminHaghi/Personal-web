@@ -439,7 +439,7 @@ a {
     justify-content: center;
     min-height: 45rem;
     background-color: var(--app-bg-color);
-    box-shadow: 0 0 8.1rem rgba(19, 182, 255, 24%);
+    box-shadow: 0 0 5.9rem rgba(19, 182, 255, 24%);
     position: relative;
     z-index: 2;
 }
@@ -513,7 +513,7 @@ a {
 .resume-contents {
     margin-left: 2rem;
     background-color: var(--section-bg-color);
-    border-left: 0.5rem solid var(--primary-color);
+    border-left: 0.3rem solid var(--primary-color);
     height: 0;
     opacity: 0;
     overflow: hidden;
@@ -534,24 +534,24 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1.7rem;
 }
 
 .resume-content__title {
     font-family: "Poppins SemiBold";
     font-size: 2rem;
-    color: var(--orange-color);
     position: relative;
-    margin-bottom: 1.7rem;
+    color: var(--orange-color);
 }
 
 .resume-content__title::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -5.4rem;
+    left: -5.1rem;
     bottom: 0;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2rem;
+    height: 2rem;
     margin: auto;
     border-radius: 100%;
     background-color: var(--primary-color);
@@ -638,4 +638,81 @@ a {
 
 .portfolio-scroll__item--active {
     border-color: var(--primary-color);
+}
+
+/*
+    x |Pricing| x
+*/
+.pricing {
+    margin-bottom: 15rem;
+    background-color: var(--section-bg-color);
+    box-shadow: 0 0 8.1rem rgba(19, 182, 255, 24%);
+    padding: 10rem 0;
+    transform: skewY(-6deg);
+}
+
+.pricing-content {
+    position: relative;
+    text-align: center;
+    padding: 20rem 0 4rem 0;
+    background-color: #cfcfcf;
+    box-shadow: 0 0 2rem rgba(19, 182, 255, 24%);
+    color: var(--text-color);
+}
+
+.pricing-content__head {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 2rem 0;
+    font-family: "Poppins SemiBold";
+    color: #fff;
+}
+
+.pricing-content__head--orange {
+    background-color: #FF6331;
+}
+
+.pricing-content__title {
+    font-size: 3.6rem;
+}
+
+.pricing-content__price {
+    font-size: 2.4rem;
+}
+
+.pricing-content__subtitle {
+    font-size: 1.6rem;
+    font-family: "Poppins Regular";
+}
+
+.pricing-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-list__item {}
+
+.pricing-list__icon {}
+
+.pricing-list__text {}
+
+.pricing-content__link {
+    margin: 0 auto;
+}
+
+.pricing-content__link--orange {
+    background-color: #FF6331;
+    box-shadow: 0 1.6rem 2.9rem rgba(255, 99, 49, 24%);
+}
+
+.pricing-content__link--purple {
+    background-color: #8540FF;
+    box-shadow: 0 1.6rem 2.9rem rgba(118, 13, 255, 24%);
+}
+
+.pricing-content__link--pink {
+    background-color: #EC407A;
+    box-shadow: 0 1.6rem 2.9rem rgba(236, 64, 122, 24%);
 }
