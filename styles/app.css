@@ -462,6 +462,7 @@ a {
     padding: 1rem 0;
     margin-bottom: 2rem;
     cursor: pointer;
+    max-width: 30rem;
 }
 
 .resume-list__item:last-child {
@@ -476,7 +477,6 @@ a {
     bottom: 0;
     left: 0;
     width: 5.7rem;
-    max-width: 30rem;
     border-radius: 4rem;
     background-color: var(--primary-color);
     margin: auto;
@@ -510,13 +510,20 @@ a {
 /*
     - Resume Content
 */
-.resume-content__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.resume-contents {
     margin-left: 2rem;
     background-color: var(--section-bg-color);
     border-left: 0.5rem solid var(--primary-color);
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 250ms ease-in-out;
+}
+
+.resume-contents--show {
+    height: 100%;
+    opacity: 1;
+    overflow: visible;
 }
 
 .resume-content {
@@ -534,6 +541,7 @@ a {
     font-size: 2rem;
     color: var(--orange-color);
     position: relative;
+    margin-bottom: 1.7rem;
 }
 
 .resume-content__title::before {
@@ -560,7 +568,7 @@ a {
 .resume-content__subtitle {
     color: var(--text-color);
     font-family: "Poppins SemiBold";
-    margin: 1.7rem 0 0.6rem 0;
+    margin-bottom: 0.6rem;
 }
 
 .resume-content__discription {
