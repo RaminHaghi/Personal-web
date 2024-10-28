@@ -7,6 +7,7 @@
     <title>Personal Website</title>
     <link rel="stylesheet" type="text/css" href="./styles/app.css">
     <link rel="stylesheet" type="text/css" href="./styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="./styles/swiper-bundle.min.css">
     <link rel="icon" type="image/png" href="./images/app icon.png">
 </head>
 
@@ -416,26 +417,26 @@
                     <li class="portfolio-list__item">Social Media</li>
                     <li class="portfolio-list__item">Print Design</li>
                 </ul>
-                <div class="row">
-                    <div class="col-12 col-lg-4">
-                        <div class="portfolio__banner"></div>
+                <div class="portfolio-content">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/book&travel.jpg" alt="Portofolio Image" class="portofolio-content__img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/mountain-rocky.jpg" alt="Portofolio Image" class="portofolio-content__img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/the-great-outdoors.jpg" alt="Portofolio Image" class="portofolio-content__img">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="portfolio__banner second-banner"></div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="portfolio__banner third-banner"></div>
-                    </div>
-                </div>
-                <div class="portfolio-scroll">
-                    <div class="portfolio-scroll__item"></div>
-                    <div class="portfolio-scroll__item portfolio-scroll__item--active"></div>
-                    <div class="portfolio-scroll__item"></div>
                 </div>
             </div>
         </section>
 
-        <section class="pricing" id="pricing">
+        <!-- <section class="pricing" id="pricing">
             <div class="container skew-rest">
                 <div class="section-head">
                     <h2 class="section-title">Pricing</h2>
@@ -556,11 +557,21 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <div class="cover"></div>
     <script src="./scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        const swiper = new Swiper('.swiper', {
+            
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+        })
+    </script>
 </body>
 
 </html>
