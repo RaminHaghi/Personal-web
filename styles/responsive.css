@@ -89,8 +89,8 @@
         box-shadow: none;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: start;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
         min-height: auto;
         margin-bottom: 4rem;
         gap: 4rem;
@@ -99,17 +99,17 @@
 
     .resume-list__item {
         margin-bottom: 0;
+        padding: 0.6rem 1.5rem;
+        border-radius: 3rem;
     }
 
     .resume-list__text {
-        padding-left: 0;
         font-size: 1.8rem;
+        padding-left: 0;
     }
 
     .resume-list__item--active {
         background-color: var(--primary-color);
-        padding: 1rem 1.5rem;
-        border-radius: 3rem;
         box-shadow: 0 1.6rem 2.9rem rgba(11, 190, 173, 24%);
     }
 

@@ -445,7 +445,7 @@ a {
     z-index: 2;
 }
 
-.resume-list::before {
+.resume-list::before {/*Left side List box*/
     content: '';
     position: absolute;
     top: 0;
@@ -466,12 +466,16 @@ a {
     max-width: 30rem;
 }
 
+.resume-list__item--active .resume-list__text {
+    color: #fff;
+}
+
 .resume-list__item:last-child {
     margin-bottom: 0;
 }
 
 
-.resume-list__item::before {
+.resume-list__item::before {/*List item icons*/
     content: '';
     position: absolute;
     top: 0;
@@ -485,7 +489,7 @@ a {
     transition: all 250ms ease-in-out;
 }
 
-.resume-list__item--active::before {
+.resume-list__item--active::before {/*changes circle item before*/
     box-shadow: 0 0 5.9rem rgba(96, 233, 255, 27%);
     width: 100%;
 }
@@ -504,9 +508,6 @@ a {
     transition: all 250ms ease-in-out;
 }
 
-.resume-list__item--active .resume-list__text {
-    color: #fff;
-}
 
 /*
     - Resume Content
@@ -584,30 +585,37 @@ a {
     margin-bottom: 15rem;
 }
 
+/*
+    - Portfolio List
+*/
 .portfolio-list {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto 5rem auto;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .portfolio-list__item {
     color: var(--text-color);
     cursor: pointer;
+    padding: 0.7rem 2rem;
+    border-radius: 4rem;
 }
 
 .portfolio-list__item--active {
-    padding: 0.7rem 2rem;
-    border-radius: 4rem;
     color: #fff;
     background-color: var(--primary-color);
+    box-shadow: 0 1.6rem 2.9rem rgba(11, 190, 173, 24%);
+
 }
 
+/*
+    - Portfolio Content
+*/
 .swiper {
-    height: 50rem;
-    background-color: #cfcfcf;
+    height: 53rem;
 }
 
 .portfolio-content {
@@ -615,17 +623,26 @@ a {
 }
 
 .swiper-pagination-bullet {
-    width: 2rem !important;
-    height: 2rem !important;
-    border: 0.4rem solid #6e6e6e !important;
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    border: 0.3rem solid #6e6e6e !important;
     background-color: transparent !important;
 }
 
 .swiper-pagination-bullet-active {
     border-color: var(--primary-color) !important;
+    box-shadow: 0 0 3rem rgba(11, 190, 173, 54%);
+
 }
 
-.portofolio-content__img {}
+.portofolio-content__img {
+    width: 100%;
+}
+
+.swiper-pagination {
+    position: static !important;
+    margin-top: 1.5rem;
+}
 
 /*
     x |Pricing Section| x

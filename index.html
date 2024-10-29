@@ -421,17 +421,32 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="./images/book&travel.jpg" alt="Portofolio Image" class="portofolio-content__img">
+                                <img src="./images/book&travel.jpg" alt="Portofolio Image"
+                                    class="portofolio-content__img">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/mountain-rocky.jpg" alt="Portofolio Image" class="portofolio-content__img">
+                                <img src="./images/mountain-rocky.jpg" alt="Portofolio Image"
+                                    class="portofolio-content__img">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/the-great-outdoors.jpg" alt="Portofolio Image" class="portofolio-content__img">
+                                <img src="./images/the-great-outdoors.jpg" alt="Portofolio Image"
+                                    class="portofolio-content__img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/book&travel.jpg" alt="Portofolio Image"
+                                    class="portofolio-content__img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/mountain-rocky.jpg" alt="Portofolio Image"
+                                    class="portofolio-content__img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/the-great-outdoors.jpg" alt="Portofolio Image"
+                                    class="portofolio-content__img">
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -565,10 +580,22 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="text/javascript">
         const swiper = new Swiper('.swiper', {
-            
+
             pagination: {
                 el: '.swiper-pagination',
             },
+
+            spaceBetween: 35,
+
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+
+                1200: {
+                    slidesPerView: 3,
+                },
+            }
 
         })
     </script>
