@@ -156,7 +156,7 @@ a {
 .menu__link {
     font-family: "Poppins Medium";
     color: var(--text-color);
-    transition: all 250ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .menu__link:hover {
@@ -199,13 +199,13 @@ a {
 .menu-toggle__line::before {
     position: absolute;
     top: 1.2rem;
-    transition: all 250ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .menu-toggle__line::after {
     position: absolute;
     bottom: 1.2rem;
-    transition: all 250ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .menu-toggle--open .menu-toggle__line {
@@ -486,7 +486,7 @@ a {
     background-color: var(--primary-color);
     margin: auto;
     z-index: -1;
-    transition: all 250ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .resume-list__item--active::before {/*changes circle item before*/
@@ -505,7 +505,7 @@ a {
     font-family: "Poppins SemiBold";
     font-size: 2rem;
     padding-left: 3rem;
-    transition: all 250ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 
@@ -602,6 +602,7 @@ a {
     cursor: pointer;
     padding: 0.7rem 2rem;
     border-radius: 4rem;
+    transition: all 200ms ease-in-out;
 }
 
 .portfolio-list__item--active {
@@ -615,11 +616,19 @@ a {
     - Portfolio Content
 */
 .swiper {
-    height: 53rem;
+    height: 100%;
 }
 
 .portfolio-content {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
 
+.portfolio-content--show {
+    height: auto;
+    opacity: 1;
 }
 
 .swiper-pagination-bullet {
@@ -637,7 +646,9 @@ a {
 
 .portofolio-content__img {
     width: 100%;
+    height: 100%;
 }
+
 
 .swiper-pagination {
     position: static !important;
