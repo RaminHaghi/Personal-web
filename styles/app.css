@@ -13,6 +13,28 @@
     --section-bg-color: #ffffff;
 }
 
+/*
+    x | Dark Mode Colors| x
+*/
+:root.dark-theme {
+    --text-color: #95A5C6;
+    --app-bg-color: #161D26;
+    --section-bg-color: #1F2935;
+}
+
+:root.dark-theme .header,
+:root.dark-theme .home__avatar,
+:root.dark-theme .about-us__content-wrapper,
+:root.dark-theme .resume,
+:root.dark-theme .resume-list,
+:root.dark-theme .pricing,
+:root.dark-theme .package {
+    box-shadow: none;
+}
+
+:root.dark-theme .home {
+    background-image: url('../images/shape-header-dark.svg');
+}
 
 /*
    x |Components| x
@@ -41,6 +63,7 @@
     letter-spacing: 0.4rem;
     text-align: center;
     color: var(--text-color);
+    transition: color 250ms ease-in-out;
 }
 
 .section-line {
@@ -104,6 +127,7 @@ body {
     color: var(--text-color);
     padding-top: 12rem;
     background-color: var(--app-bg-color);
+    transition: all 250ms ease-in-out;
 }
 
 a {
@@ -116,6 +140,7 @@ a {
 .header {
     box-shadow: 0 0.3rem 5.9rem rgba(4, 195, 255, 16%);
     background-color: var(--section-bg-color);
+    transition: background-color 250ms ease-in-out;
     position: fixed;
     z-index: 100;
     top: 0;
@@ -147,6 +172,7 @@ a {
 .menu__item {
     margin-left: 5rem;
     color: var(--text-color);
+    transition: color 250ms ease-in-out;
 }
 
 .menu__item:first-child {
@@ -293,6 +319,7 @@ a {
     margin-bottom: 9rem;
     height: 85.5rem;
     background-color: var(--app-bg-color);
+    transition: background-color 250ms ease-in-out;
 }
 
 .about-us__content-wrapper {
@@ -301,6 +328,7 @@ a {
     border-radius: 0.7rem;
     overflow: hidden;
     background-color: var(--section-bg-color);
+    transition: background-color 250ms ease-in-out;
     box-shadow: 0 0 5.9rem rgba(96, 233, 255, 27%);
 }
 
@@ -428,6 +456,7 @@ a {
     padding: 8rem 0;
     margin-bottom: 9rem;
     background-color: var(--section-bg-color);
+    transition: background-color 250ms ease-in-out;
     box-shadow: 0 0 8.1rem rgba(19, 182, 255, 24%);
     transform: skewY(-6deg);
 }
@@ -446,6 +475,7 @@ a {
     border-radius: 0.7rem;
     overflow: hidden;
     z-index: 2;
+    transition: background-color 250ms ease-in-out;
 }
 
 .resume-list::before {
@@ -511,6 +541,7 @@ a {
     font-family: "Poppins SemiBold";
     font-size: 2rem;
     padding-left: 3rem;
+    transition: color 250ms ease-in-out;
 }
 
 
@@ -576,11 +607,12 @@ a {
     color: var(--text-color);
     font-family: "Poppins SemiBold";
     margin-bottom: 0.6rem;
+    transition: color 250ms ease-in-out;
 }
 
 .resume-content__discription {
     color: var(--text-color);
-
+    transition: color 250ms ease-in-out;
 }
 
 /*
@@ -607,7 +639,7 @@ a {
     cursor: pointer;
     padding: 0.7rem 2rem;
     border-radius: 4rem;
-    transition: all 120ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 .portfolio-list__item--active {
@@ -669,6 +701,7 @@ a {
     margin-bottom: 9rem;
     transform: skewY(-6deg);
     background-color: var(--section-bg-color);
+    transition: background-color 250ms ease-in-out;
     box-shadow: 0 0 8.1rem rgba(19, 182, 255, 24%);
 }
 
@@ -703,6 +736,7 @@ a {
     align-items: center;
     padding: 3rem 0 4rem 0;
     background-color: var(--app-bg-color);
+    transition: background-color 250ms ease-in-out;
 }
 
 /* .package-options {
@@ -711,6 +745,7 @@ a {
 .package-options__item {
     margin-bottom: 2rem;
     color: var(--text-color);
+    transition: color 250ms ease-in-out;
 }
 
 .package-options__icon {
@@ -771,6 +806,7 @@ a {
     left: 20%;
     margin: auto;
     box-shadow: 0 0 8.1rem rgba(19, 182, 255, 70%);
+    transition: background-color 250ms ease-in-out;
 }
 
 .contact-map__icon {
@@ -784,6 +820,7 @@ a {
     border-radius: 0.7rem;
     margin-left: auto;
     background-color: var(--section-bg-color);
+    transition: background-color 250ms ease-in-out;
     box-shadow: 0 0 8.1rem rgba(19, 182, 255, 24%);
 }
 
@@ -811,11 +848,14 @@ a {
     padding: 1.2rem 3rem;
     color: var(--text-color);
     background-color: var(--app-bg-color);
-    box-shadow: 0 0 5.9rem rgba(96, 233, 255, 27%);
+    transition: background-color 250ms ease-in-out;
+    box-shadow: 0 0 5.9rem rgba(96, 233, 255, 7%);
+    transition: color 250ms ease-in-out;
 }
 
 .contact__input::placeholder {
     color: var(--text-color);
+    transition: color 250ms ease-in-out;
 }
 
 .contact__input--textarea {
@@ -842,6 +882,7 @@ a {
 .footer {
     padding: 3.5rem 0;
     background-color: var(--app-bg-color);
+    transition: background-color 250ms ease-in-out;
 }
 
 .footer-wrapper {
@@ -871,7 +912,7 @@ a {
     justify-content: center;
     width: 5rem;
     height: 5rem;
-    background-color: #222d3b;
+    background-color: #1F2935;
     padding: 0.5rem;
     border-radius: 100%;
     transition: background-color 120ms ease-in-out;
@@ -886,4 +927,9 @@ a {
     width: 3.5rem;
     height: 3.5rem;
     fill: var(--app-bg-color);
+    transition: fill 250ms ease-in-out;
+}
+
+.change-theme svg {
+    fill: #fff;
 }
