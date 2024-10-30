@@ -875,6 +875,11 @@ a {
     background-color: #222d3b;
     padding: 0.5rem;
     border-radius: 100%;
+    transition: background-color 250ms ease-in-out;
+}
+
+.footer__social:hover {
+    background-color: var(--primary-color);
 }
 
 .footer__social svg {

@@ -247,9 +247,19 @@
         width: 32rem;
         height: 32rem;
     }
+
+    .footer__copy-right {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .footer__social {
+        width: 4rem;
+        height: 4rem;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .home__avatar {
         width: 25rem;
         height: 25rem;
@@ -315,7 +325,7 @@
     .contact__title {
         font-size: 2.6rem;
     }
-    
+
     .contact__input {
         font-size: 1.2rem;
         padding: 1rem 1.7rem;
@@ -324,5 +334,14 @@
     .contact__submit {
         padding: 0.7rem;
         font-size: 1.4rem;
+    }
+    .footer__social {
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+
+    .footer__copy-right {
+        font-size: 1.1rem;
+        letter-spacing: 0.2rem;
     }
 }
