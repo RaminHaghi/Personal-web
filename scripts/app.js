@@ -93,3 +93,25 @@ menuItems.forEach(item => {
         })
     })
 })
+
+
+//   Swiper Styles
+const swiper = new Swiper('.swiper', {
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    spaceBetween: 30,
+
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+
+        1200: {
+            slidesPerView: 3,
+        },
+    }
+
+})
