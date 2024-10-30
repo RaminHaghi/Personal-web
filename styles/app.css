@@ -864,7 +864,8 @@ a {
     gap: 1rem;
 }
 
-.footer__social {
+.footer__social,
+.change-theme {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -880,7 +881,8 @@ a {
     background-color: var(--primary-color);
 }
 
-.footer__social svg {
+.footer__social svg,
+.change-theme svg {
     width: 3.5rem;
     height: 3.5rem;
     fill: var(--app-bg-color);
