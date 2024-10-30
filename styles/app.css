@@ -1593,6 +1593,9 @@ a {
 .package-options__icon {
     margin-right: 0.8rem;
 }
+.package-options__icon path {
+    fill: var(--text-color);
+}
 
 .package__head--orange {
     background-color: #FF6331;
