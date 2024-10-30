@@ -6,7 +6,3 @@
 - *In this project, **BEM** naming is used for the classes and the readability of the codes is very high and standard, <br /> and the comments are also done.*
 
 - *And fully **responsive** on standard desktop and mobile screens ✨*
-  
-&nbsp;
-
-![Personal Web](https://github.com/RaminHaghi/Personal-web/blob/master/images/Personal%20Web.png?raw=true)
