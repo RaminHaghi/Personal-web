@@ -93,19 +93,21 @@
         align-items: center;
         min-height: auto;
         margin-bottom: 4rem;
-        gap: 4rem;
+        gap: 0.5rem;
         background-color: transparent;
     }
 
     .resume-list__item {
         margin-bottom: 0;
-        padding: 0.6rem 1.5rem;
+        padding: 0.7rem 2rem;
         border-radius: 3rem;
+        transition: all 120ms ease-in-out;
     }
 
     .resume-list__text {
-        font-size: 1.8rem;
         padding-left: 0;
+        font-family: inherit;
+        font-size: inherit;
     }
 
     .resume-list__item--active {
@@ -149,7 +151,11 @@
 
 @media (max-width: 768px) {
     .header__logo {
-        font-size: 5rem;
+        font-size: 4.5rem;
+    }
+
+    .navbar {
+        height: 9rem;
     }
 
     .menu {
@@ -162,8 +168,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border-bottom-right-radius: 0.7rem;
+        border-bottom-left-radius: 0.7rem;
         background-color: var(--section-bg-color);
-        transition: all 200ms ease-in-out;
+        transition: all 120ms ease-in-out;
     }
 
     .menu--open {
@@ -192,12 +200,16 @@
         background-color: rgba(0, 0, 0, 12%);
         opacity: 0;
         z-index: -1;
-        transition: all 200ms ease-in-out;
+        transition: all 120ms ease-in-out;
     }
 
     .cover--show {
         opacity: 1;
         z-index: 99;
+    }
+
+    .home {
+        padding-top: 5rem;
     }
 
     .home__avatar {
@@ -208,6 +220,10 @@
     .home__link {
         flex-direction: column;
         width: 100%;
+    }
+
+    .about-us__content {
+        padding: 0 2.5rem;
     }
 
     .about-us__links {
@@ -225,6 +241,10 @@
 
     .about-us {
         height: 142rem;
+    }
+
+    .contact {
+        padding: 3rem 2.5rem;
     }
 }
 
@@ -260,9 +280,45 @@
 }
 
 @media (max-width: 420px) {
+    .navbar {
+        height: 6rem;
+    }
+
+    .header__logo {
+        font-size: 3.3rem;
+    }
+
+    .menu__toggle {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .menu-toggle__line {
+        width: 4rem;
+        height: 0.3rem;
+    }
+
+    .menu-toggle__line::before {
+        width: 4rem;
+        height: 0.3rem;
+        top: 1.1rem;
+    }
+
+    .menu-toggle__line::after {
+        width: 4rem;
+        height: 0.3rem;
+        bottom: 1.1rem;
+    }
+
+    .home {
+        height: 52rem;
+        padding-top: 0rem;
+    }
+
     .home__avatar {
-        width: 25rem;
-        height: 25rem;
+        width: 22rem;
+        height: 22rem;
+        margin: 0 auto 1rem auto;
     }
 
     .home__links-wrapper,
@@ -287,6 +343,19 @@
     .home__link {
         height: 4rem;
         font-size: 1.4rem;
+    }
+
+    .about-us__title {
+        font-size: 2.2rem;
+    }
+
+    .about-us__item {
+        font-size: 1.3rem;
+    }
+
+    .about-us__item::before {
+        width: 1.1rem;
+        height: 1.1rem;
     }
 
     .section-title {
@@ -318,10 +387,6 @@
         font-size: 1.3rem;
     }
 
-    .contact {
-        padding: 3rem 1.8rem;
-    }
-
     .contact__title {
         font-size: 2.6rem;
     }
@@ -335,6 +400,7 @@
         padding: 0.7rem;
         font-size: 1.4rem;
     }
+
     .footer__social {
         width: 3.4rem;
         height: 3.4rem;
