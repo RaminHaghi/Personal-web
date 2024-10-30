@@ -1909,6 +1909,10 @@ a {
         background: none;
     }
 
+    :root.dark-theme .home {
+        background-image: none;
+    }
+    
     .home__content-wrapper {
         -webkit-box-align: center;
             -ms-flex-align: center;
