@@ -12,33 +12,32 @@
 </head>
 
 <body>
-
-    <header class="header">
+    <header class="header"><!--Header Section-->
         <div class="container">
             <nav class="navbar">
                 <h1 class="header__logo">WA.</h1>
 
                 <ul class="menu">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link menu__link--active">Home</a>
+                    <li class="menu__item menu__item--active" data-section="home">
+                        <a href="#" class="menu__link">Home</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#about-us" class="menu__link">About us</a>
+                    <li class="menu__item" data-section="about-us">
+                        <a href="#" class="menu__link">About us</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#services" class="menu__link">Services</a>
+                    <li class="menu__item" data-section="services">
+                        <a href="#" class="menu__link">Services</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#resume" class="menu__link">Resume</a>
+                    <li class="menu__item" data-section="resume">
+                        <a href="#" class="menu__link">Resume</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#portfolio" class="menu__link">Portfolio</a>
+                    <li class="menu__item" data-section="portfolio">
+                        <a href="#" class="menu__link">Portfolio</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#pricing" class="menu__link">Pricing</a>
+                    <li class="menu__item" data-section="pricing">
+                        <a href="#" class="menu__link">Pricing</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#contact" class="menu__link">Contact</a>
+                    <li class="menu__item" data-section="contact-us">
+                        <a href="#" class="menu__link">Contact</a>
                     </li>
                 </ul>
 
@@ -48,8 +47,8 @@
             </nav>
         </div>
     </header>
+    <main class="main"><!--Main Section-->
 
-    <main class="main">
         <section class="home">
             <div class="container">
                 <div class="row items-center">
@@ -59,8 +58,8 @@
                             <h2 class="home__title">Creative Designer</h2>
                             <p class="home__caption">Freelancer Web/ Mobile UI/UX Designer with Motion Graphics</p>
                             <div class="home__links-wrapper">
-                                <a href="#" class="app-btn home__link">Hire Me</a>
-                                <a href="#" class="app-btn home__link home__link--orange">Get Resume</a>
+                                <a href="#about-us" class="app-btn home__link">Hire Me</a>
+                                <a href="#resume" class="app-btn home__link home__link--orange">Get Resume</a>
                             </div>
                         </div>
                     </div>
@@ -100,8 +99,8 @@
                             <li class="about-us__item">Supper Support</li>
                         </ul>
                         <div class="about-us__links">
-                            <a href="" class="app-btn about-us__link">Hire Me</a>
-                            <a href="" class="app-btn about-us__link about-us__link--orange">Get Resume</a>
+                            <a href="#" class="app-btn about-us__link">Hire Me</a>
+                            <a href="#resume" class="app-btn about-us__link about-us__link--orange">Get Resume</a>
                         </div>
                     </div>
                 </div>
@@ -737,7 +736,7 @@
             </div>
         </section>
 
-        <seciton class="contact-us" id="contact">
+        <seciton class="contact-us" id="contact-us">
             <div class="section-head">
                 <h2 class="section-title">Contact us</h2>
                 <h3 class="section-subject">Let's Keep In Touch</h3>
@@ -768,8 +767,7 @@
             </div>
         </seciton>
     </main>
-
-    <footer class="footer">
+    <footer class="footer"><!--Footer Section-->
         <div class="container">
             <div class="footer-wrapper">
                 <p class="footer__copy-right">© 2019 Createuiux. All rights reserved.</p>
@@ -831,10 +829,10 @@
             </div>
         </div>
     </footer>
+    <div class="cover"></div><!--Mobile menu background cover-->
 
-    <div class="cover"></div>
     <script src="./scripts/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!--Slider cdn Script-->
     <script type="text/javascript">
         const swiper = new Swiper('.swiper', {
 

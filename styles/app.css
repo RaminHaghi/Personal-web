@@ -95,7 +95,6 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -147,25 +146,24 @@ a {
 
 .menu__item {
     margin-left: 5rem;
+    color: var(--text-color);
 }
 
 .menu__item:first-child {
     margin-left: 0;
 }
 
+.menu__item--active {
+    color: var(--primary-color);
+}
+
 .menu__link {
+    color: inherit;
     font-family: "Poppins Medium";
-    color: var(--text-color);
     transition: all 120ms ease-in-out;
 }
 
 .menu__link:hover {
-    color: var(--primary-color);
-    font-size: 1.61rem;
-    letter-spacing: 0.1rem;
-}
-
-.menu__link--active {
     color: var(--primary-color);
 }
 
